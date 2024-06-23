@@ -45,6 +45,10 @@ app.use('/api', dataRoutes);
 const authRoutes = require('./routes/userRoutes')
 app.use('/auth', authRoutes)
 
+app.get('/test' , async(req,res) => {
+    res.send('working')
+})  
+
 //server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
