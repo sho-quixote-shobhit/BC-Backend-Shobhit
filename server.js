@@ -45,7 +45,7 @@ app.use('/api', dataRoutes);
 const authRoutes = require('./routes/userRoutes')
 app.use('/auth', authRoutes)
 
-app.get('/test' , async(req,res) => {
+app.get('/' , async(req,res) => {
     res.send('working')
 })  
 
