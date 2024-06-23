@@ -11,7 +11,7 @@ app.use(morgan('dev'))
 
 
 
-app.use(cors({origin : "https://bc-frontend-shobhit.vercel.app/" , credentials : "true"}))
+app.use(cors({origin : "https://bc-frontend-shobhit.vercel.app" , ceredentials : "true"}))
 app.use(express.json());
 
 
